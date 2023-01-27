@@ -16,10 +16,7 @@ db.sync()
 
 initModels()
 
-app.get('/', (req, res) => {
-  res.status(200).json({ massage: 'OK!' })
-})
-app.use('/api/v1/movies', moviesRouter)
+app.use('/movies', moviesRouter)
 
 
 app.listen(port, () => {

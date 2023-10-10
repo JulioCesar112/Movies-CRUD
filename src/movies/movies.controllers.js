@@ -2,9 +2,7 @@ const Movies = require('../models/movies.models')
 const uuid = require('uuid')
 
 const getAllMovies = async () => {
-  const data = await Movies.findAll({
-    order: [[id, name, genre, duration, releaseDate ]]
-  })
+  const data = await Movies.findAll()
   return data
 }
 // getAllMovies()

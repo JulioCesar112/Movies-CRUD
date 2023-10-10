@@ -14,7 +14,6 @@ db.sync()
   .then(() => console.log('Database synced'))
   .catch(err => console.log(err))
 
-initModels()
 
 app.use('/movies', moviesRouter)
 
